@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 
 function createError() {
-  console.log("Creating error");
+  console.log("Creating error - should be ignored");
 
   throw new Error("Error caused by clicking a button");
 }

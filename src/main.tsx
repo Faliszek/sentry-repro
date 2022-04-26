@@ -10,6 +10,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 Sentry.init({
   dsn: "https://7f4f2099ad624e6e95c9fecb1b99fca9@o1220616.ingest.sentry.io/6363607",
   integrations: [new BrowserTracing()],
+  ignoreErrors: ["Error caused by clicking a button"],
 
   // Set tracesSampleRate to 1.0 to capture 100%
   // of transactions for performance monitoring.
