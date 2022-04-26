@@ -2,6 +2,12 @@ import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+function createError() {
+  console.log("Creating error");
+
+  throw new Error("Error caused by clicking a button");
+}
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -13,6 +19,9 @@ function App() {
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
+          </button>
+          <button type="button" onClick={() => createError()}>
+            Throw error
           </button>
         </p>
         <p>
