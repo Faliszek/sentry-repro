@@ -79,7 +79,7 @@ function Layout() {
         {" | "}
         <Link to="invoices">Invoices</Link>
         {" | "}
-        <Link to="login">Login</Link>
+        <a href="login">Login</a>
       </nav>
       <div className="content">
         <Outlet />
